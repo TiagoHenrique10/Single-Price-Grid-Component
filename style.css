@@ -1,0 +1,193 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Karla';
+    background-color: #E8E8E8;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    max-width: 750px;
+    max-height: 600px;  
+    display: grid;
+    gap: 0px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;  
+}
+
+/* Estilização do primeiro card */
+
+.card-one {
+   background-color: #EBEEF2; 
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 2;
+   grid-column-end: 3;
+   border-radius: 10px 10px 0 0;
+}
+
+.description-one, .description-two, .description-tree {
+    width: auto;
+    margin: 50px;
+}
+
+.description-one h2 {
+    font-size: 29px;
+    padding-bottom: 30px;
+    color: #5444da;
+}
+
+.description-one h3 {
+    color:#5444da;
+    padding-bottom: 24px;
+    font-size: 25px;
+} 
+
+.description-one p {
+    color: #2f2828be;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilização do segundo card */
+
+.card-two {
+    background-color:#5444da;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.description-two h2 {
+   margin-bottom: 20px;
+   color: #FFFFFF;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.value {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.Month {
+    padding-left: 10px;
+    color: #e7e0e07e;
+    margin-bottom: 0px;
+}
+
+ .acess {
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+ /* Estilização do button */
+
+button {
+    margin-top: 40px;
+}
+
+.btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 30px;
+    moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-position: 100% 0;
+    moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn.btn2 {
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.507);
+  }
+
+/* Estilização do terceiro card */
+
+.card-tree {
+    background-color:#765aed; 
+    grid-row-start: 2;
+    grid-column-start: 2; 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.card-tree h2 {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.card-tree p {
+    color: #FFFFFF;
+    line-height: 1.6;
+    text-align: left;
+    width: 90%;
+    font-size: 17px;
+}
+
+/* Aplicação para dispositivos moveis */
+
+@media only screen and (min-width:375px) and (max-width:770px) {
+    section {
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width:610px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .card-tree {
+        border-radius: 0px 0px 10px 10px;
+    }
+    .card-two {
+        border-radius: 0;
+    }
+}
