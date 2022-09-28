@@ -19,8 +19,8 @@ main {
 }
 
 section {
-    max-width: 750px;
-    max-height: 600px;  
+    max-width: 46.875rem;
+    max-height: 37.5rem;  
     display: grid;
     gap: 0px;
     grid-template-rows: 1fr 1fr;
@@ -40,24 +40,24 @@ section {
 
 .description-one, .description-two, .description-tree {
     width: auto;
-    margin: 50px;
+    margin: 3.125rem;
 }
 
 .description-one h2 {
-    font-size: 29px;
-    padding-bottom: 30px;
+    font-size: 1.8125rem;
+    padding-bottom: 1.875rem;
     color: #5444da;
 }
 
 .description-one h3 {
     color:#5444da;
-    padding-bottom: 24px;
-    font-size: 25px;
+    padding-bottom: 1.5rem;
+    font-size: 1.5625rem;
 } 
 
 .description-one p {
     color: #2f2828be;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.6;
 }
 
@@ -73,7 +73,7 @@ section {
 }
 
 .description-two h2 {
-   margin-bottom: 20px;
+   margin-bottom: 1.25rem;
    color: #FFFFFF;
 }
 
@@ -83,40 +83,40 @@ section {
 }
 
 .value {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .Month {
-    padding-left: 10px;
+    padding-left: 0.625rem;
     color: #e7e0e07e;
     margin-bottom: 0px;
 }
 
  .acess {
     color: #FFFFFF;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
  /* Estilização do button */
 
 button {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .btn {
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
-    height: 55px;
+    height: 3.4375rem;
     text-align:center;
     border: none;
     background-size: 300% 100%;
     border-radius: 30px;
-    moz-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -124,7 +124,7 @@ button {
   
   .btn:hover {
     background-position: 100% 0;
-    moz-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -157,7 +157,7 @@ button {
 }
 
 .card-tree h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: #FFFFFF;
 }
 
@@ -173,7 +173,7 @@ button {
 
 @media only screen and (min-width:375px) and (max-width:770px) {
     section {
-        margin: 5px;
+        margin: 0.3125rem;
     }
 }
 
@@ -181,7 +181,7 @@ button {
     section {
         display: flex;
         flex-direction: column;
-        margin: 5px;
+        margin: 0.3125rem;
     }
 
     .card-tree {
